@@ -1,0 +1,11 @@
+<div class="navbar">
+  <div class="logo-navbar">
+    <%= link_to root_path do %>
+      <%= image_tag "https://media.istockphoto.com/photos/fresh-popcorn-bursting-from-the-box-with-flavor-explosion-picture-id155372190?s=612x612", alt: "app logo", class: 'logo logo-round-shadow' %>
+    <% end %>
+  </div>
+  <div class="navbar-links">
+    <%= link_to "My lists", root_path, class: "navbar-link" %>
+    <%= link_to "New list", lists_new_path, class: "navbar-link" %>
+  </div>
+</div>

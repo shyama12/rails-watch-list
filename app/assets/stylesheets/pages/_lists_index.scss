@@ -1,0 +1,36 @@
+.banner-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.istockphoto.com/photos/fresh-popcorn-bursting-from-the-box-with-flavor-explosion-picture-id155372190?s=612x612');
+  background-size: cover;
+  background-position: center;
+
+  h1, h3 {
+    color: white;
+  }
+}
+
+.lists-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    font-weight: bold;
+  }
+
+  a {
+    background-color: $success;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}
+
+.lists-wrapper {
+  padding: 100px 0;
+}

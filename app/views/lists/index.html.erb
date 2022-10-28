@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <div class="banner-index">
+    <h1>Welcome to your lists!</h1>
+  </div>
+  <div class="container">
+    <div class="lists-wrapper">
+      <div class="lists-heading">
+          <h3>My Lists</h3>
+          <%= link_to "Create a movie list", lists_new_path, class: "green-btn" %>
+      </div>
+      <div class="list-index-content">
+        <% @lists.each do |list| %>
+          <%= link_to list_path(list) do %>
+            <div class="list-card-index">
+              <%= image_tag 'https://media.istockphoto.com/photos/fresh-popcorn-bursting-from-the-box-with-flavor-explosion-picture-id155372190?s=612x612', alt: 'image for list', class: 'img-list-cover' %>
+              <div class="list-card-name">
+                <%= list.name %>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
