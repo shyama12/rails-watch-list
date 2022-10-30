@@ -7,10 +7,6 @@
   </div>
   <div class="container">
     <div class="movies-wrapper">
-      <div class="movies-heading">
-          <%# Below code is for when there is a bookmarkas/new template %>
-          <%= link_to "add a movie", new_list_bookmark_path(@list) %>
-      </div>
       <div class="movies-content">
         <% @list.movies.each do |movie| %>
         <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
@@ -32,7 +28,7 @@
         <% end %>
       </div>
 
-      <%# <%= render "add_movie_form" %>
+      <%= render "add_movie_form", list: @list, bookmark: @bookmark %>
       <%# Code below is for rendering the reviews and review form  %>
       <%# <div class="reviews-show"> %>
         <%# <%= render 'reviews', list: @list %>
