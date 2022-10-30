@@ -9,7 +9,12 @@
   background-position: center;
 
   h1, h3 {
+    display: block;
     color: white;
+  }
+
+  h3 {
+    height: 1em;
   }
 }
 
